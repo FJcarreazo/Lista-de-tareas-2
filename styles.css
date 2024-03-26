@@ -1,0 +1,225 @@
+*,
+ ::before,
+ ::after {
+    box-sizing: border-box;
+    /* 1 */
+    border-width: 0;
+    /* 2 */
+    border-style: solid;
+    /* 2 */
+    border-color: #e5e7eb;
+    /* 2 */
+ }
+
+
+body { 
+    padding-top: 7.5rem;
+}
+
+html {
+    --s: 200px; /* control the size */
+    --c1: #1d1d1d;
+    --c2: #4e4f51;
+    --c3: #3c3c3c;
+    
+    background:
+      repeating-conic-gradient(from 30deg,#0000 0 120deg,var(--c3) 0 180deg) 
+       calc(.5*var(--s)) calc(.5*var(--s)*0.577),
+      repeating-conic-gradient(from 30deg,var(--c1) 0 60deg,var(--c2) 0 120deg,var(--c3) 0 180deg);
+    background-size: var(--s) calc(var(--s)*0.577);
+  }
+  
+
+.tachado {
+    text-decoration: line-through;
+}
+
+
+#container {
+    background: gray;
+    width: 600px;
+    margin: auto;
+    padding: 30px 50px;
+    border-radius: 5%;
+    
+    
+
+}
+
+.titulo {
+    text-align: center;
+    
+}
+ 
+.form-contaner {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
+#boton-input {
+    width: 3rem;
+    padding: 0.25rem;
+    height: 3rem;
+    background-color: blue;
+    border: 2px solid blue;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+#boton-input:hover {
+    background-color: rgb(19, 19, 151);
+    border: 2px solid rgb(19, 19, 151);
+}
+
+.barra-texto {
+    border-radius: 0.5rem;
+    width: 350px;
+    
+}
+
+.lista-tareas {
+    list-style: none;
+    padding: 0;
+    overflow-y: scroll;
+    height: 15rem;
+}
+
+.lista-tareas li {
+    margin: 10px 0;
+   background: rgb(109, 107, 107);
+   padding: 10px;
+   display: flex;
+   justify-content: space-between;
+   border-radius: 1rem;
+   
+}
+
+.check-btn {
+    width: 3rem;
+    height: 3rem;
+    padding: 0.25rem;
+    background-color: greenyellow;
+    border: 2px solid greenyellow;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    
+}
+
+.check-btn:hover {
+    background-color: rgb(86, 121, 34);
+    border: 2px solid rgb(86, 121, 34);
+}
+
+
+.delete-btn {
+    width: 3rem;
+    height: 3rem;
+    padding: 0.25rem;
+    background-color: red;
+    border: 2px solid red;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    background-color: rgb(126, 13, 13);
+    border: 2px solid rgb(126, 13, 13);
+}
+
+#contenedor {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    border: solid ;
+    border-radius: 0.5rem;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Inter";
+}
+
+.input-tarea {
+    display: block;
+    overflow-wrap: break-word;
+}
+
+.task-list p {
+    border-bottom: 1px solid #ccc; /* para separar visualmente las tareas */
+    margin: 5px 0; /* margen entre cada tarea */
+    padding: 5px; /* padding para dar espacio al texto dentro de cada tarea */
+    white-space: pre-wrap;
+    
+    
+    
+  }
+  .task-list p:focus {
+    outline: none; /* eliminar el contorno al hacer clic en la tarea para que se vea más como un input */
+  }
+
+  .task-list {
+    width: 80%;
+  }
+
+.boton1{
+    background-color: transparent;
+}
+
+.boton2 {
+    background-color: transparent;
+}
+
+.boton-2 {
+    background-color: transparent;
+    
+}
+
+.boton3 {
+    background-color: transparent;
+}
+  
+.boton-3 {
+    background-color: transparent;
+}
+
+.boton4 {
+    background-color: transparent;
+}
+
+.boton-4 {
+    background-color: transparent;
+}
+  
+
+@media (min-width: 360px) {
+    #container {
+        width: 23rem;
+
+    } 
+
+    .barra-texto {
+        width: 11rem;
+    }
+  }
+
+  @media (min-width: 768px) {
+    #container {
+        width: 630px;
+    }
+
+    .barra-texto {
+        width: 25rem;
+    }
+
+  }
